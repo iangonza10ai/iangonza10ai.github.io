@@ -1,0 +1,1052 @@
+<!-- <?PHP header('X-Frame-Options: SAMEORIGIN'); ?> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <meta http-equiv="X-Frame-Options" content="deny" /> -->
+    <title>App</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <style>
+ 
+		html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; } * { margin: 0; border: 0; } body { -webkit-font-smoothing: antialiased; } img, picture, video, canvas, svg { display: block; max-width: 100%; height: auto; } input, button, textarea, select { font: inherit; } p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; font-weight: normal; }  
+		button {cursor: pointer; padding: 5px 10px; border-radius: 8px;}
+		button:active, button:hover {
+			background: #dddddd !important;
+			color: red !important; 
+		} 
+
+
+		.myldrgle-i { animation: myldrgle 0.5s infinite; } .myldrgle { animation: myldrgle 0.5s; } @keyframes myldrgle { from, to { transform: scale(1, 1); } 25% { transform: scale(0.9, 1.1); } 50% { transform: scale(1.1, 0.9); } 75% { transform: scale(0.95, 1.05); } } .myldrspn-i { animation: myldrspn 0.5s infinite linear; } .myldrspn { animation: myldrspn 0.5s linear; } @keyframes myldrspn { from { transform: rotate(0deg); } to { transform: rotate(360deg); } } .myldrlscspn-i { animation: myldrlscspn 0.5s infinite ease; } .myldrlscspn { animation: myldrlscspn 0.5s ease; } @keyframes myldrlscspn { from { transform: rotate(0deg); } to { transform: rotate(720deg); } } .myldrple-i { animation: myldrple 0.5s infinite ease-in-out alternate; } .myldrple { animation: myldrple 0.5s ease-in-out alternate; } @keyframes myldrple { from { transform: scale(0.8); } to { transform: scale(1.2); } } .myldrflh-i { animation: myldrflh 500ms ease infinite alternate; } .myldrflh { animation: myldrflh 500ms ease alternate; } @keyframes myldrflh { from { opacity: 1; } to { opacity: 0; } } .myldrthe-i { animation: myldrthe 0.5s ease infinite; } .myldrthe { animation: myldrthe 0.5s ease; } @keyframes myldrthe { 30% { transform: scale(1.2); } 40%, 60% { transform: rotate(-20deg) scale(1.2); } 50% { transform: rotate(20deg) scale(1.2); } 70% { transform: rotate(0deg) scale(1.2); } 100% { transform: scale(1); } } .myldrgrw-i { animation: myldrgrw 0.5s ease infinite; } .myldrgrw { animation: myldrgrw 0.5s ease; } @keyframes myldrgrw { from { transform: scale(0); } to { transform: scale(1); } } .myldrfdei-i { animation: myldrfdei 0.5s linear infinite; } .myldrfdei { animation: myldrfdei 0.5s linear; } @keyframes myldrfdei { from { opacity: 0; } to { opacity: 1; } } .myldrfdeo-i { animation: myldrfdeo 0.5s linear infinite; } .myldrfdeo { animation: myldrfdeo 0.5s linear; } @keyframes myldrfdeo { from { opacity: 1; } to { opacity: 0; } } .myldrbne-i { animation: myldrbne 0.5s ease infinite; } .myldrbne { animation: myldrbne 0.5s ease; } @keyframes myldrbne { 70% { transform:translateY(0%); } 80% { transform:translateY(-15%); } 90% { transform:translateY(0%); } 95% { transform:translateY(-7%); } 97% { transform:translateY(0%); } 99% { transform:translateY(-3%); } 100% { transform:translateY(0); } } .myldrbne2-i { animation: myldrbne2 0.5s ease infinite; } .myldrbne2 { animation: myldrbne2 0.5s ease; } @keyframes myldrbne2 { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-30px);} 60% {transform: translateY(-15px);} } .myldrshe-i { animation: myldrshe 0.5s ease infinite; } .myldrshe { animation: myldrshe 0.5s ease; } @keyframes myldrshe { 0%, 100% {transform: translateX(0);} 10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 20%, 40%, 60%, 80% {transform: translateX(10px);} } .myldrflp-i { backface-visibility: visible !important; animation: myldrflp 0.5s ease infinite; } .myldrflp { backface-visibility: visible !important; animation: myldrflp 0.5s ease; }
+        @keyframes myldrflp { 0% { transform: perspective(400px) rotateY(0); animation-timing-function: ease-out; } 40% { transform: perspective(400px) translateZ(150px) rotateY(170deg); animation-timing-function: ease-out; } 50% { transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1); animation-timing-function: ease-in; } 80% { transform: perspective(400px) rotateY(360deg) scale(.95); animation-timing-function: ease-in; } 100% { transform: perspective(400px) scale(1); animation-timing-function: ease-in; } } .myldrswg-i { transform-origin: top center; animation: myldrswg 0.5s ease infinite; } .myldrswg { transform-origin: top center; animation: myldrswg 0.5s ease; } @keyframes myldrswg { 20% { transform: rotate(15deg); } 40% { transform: rotate(-10deg); } 60% { transform: rotate(5deg); } 80% { transform: rotate(-5deg); } 100% { transform: rotate(0deg); } } .myldrwbe-i { animation: myldrwbe 0.5s ease infinite; } .myldrwbe { animation: myldrwbe 0.5s ease; } @keyframes myldrwbe { 0% { transform: translateX(0%); } 15% { transform: translateX(-25%) rotate(-5deg); } 30% { transform: translateX(20%) rotate(3deg); } 45% { transform: translateX(-15%) rotate(-3deg); } 60% { transform: translateX(10%) rotate(2deg); } 75% { transform: translateX(-5%) rotate(-1deg); } 100% { transform: translateX(0%); } } .myldrfdeidwn-i { animation: myldrfdeidwn 0.5s ease infinite; } .myldrfdeidwn { animation: myldrfdeidwn 0.5s ease; } @keyframes myldrfdeidwn { 0% { opacity: 0; transform: translateY(-20px); } 100% { opacity: 1; transform: translateY(0); } }
+
+        .myldrfdeilft-i { animation: myldrfdeilft 0.5s ease infinite; }
+        .myldrfdeilft { animation: myldrfdeilft 0.5s ease; }
+        @keyframes myldrfdeilft { 0% { opacity: 0; transform: translateX(-20px); } 
+        100% { opacity: 1; transform: translateX(0); } }
+
+        .myldrfdeorgt-i { animation: myldrfdeorgt 0.5s ease infinite; }
+        .myldrfdeorgt { animation: myldrfdeorgt 0.5s ease; }
+        @keyframes myldrfdeorgt { 0% { opacity: 1; transform: translateX(0); } 
+        100% { opacity: 0; transform: translateX(-20px); } }
+
+
+
+		.myldrfdedwn-i { animation: myldrfdedwn 0.5s ease infinite; } .myldrfdedwn { animation: myldrfdedwn 0.5s ease; } @keyframes myldrfdedwn { 0% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; transform: translateY(20px); } } .myldrfdergt-i { animation: myldrfdergt 0.5s ease infinite; } .myldrfdergt { animation: myldrfdergt 0.5s ease; } @keyframes myldrfdergt { 0% { opacity: 1; transform: translateX(0); } 100% { opacity: 0; transform: translateX(20px); } } .myldrbnei-i { animation: myldrbnei 0.5s ease infinite; } .myldrbnei { animation: myldrbnei 0.5s ease; } @keyframes myldrbnei { 0% { opacity: 0; transform: scale(.3); } 50% { opacity: 1; transform: scale(1.05); } 70% { transform: scale(.9); } 100% { transform: scale(1); } } .myldrbneirgt-i { animation: myldrbneirgt 0.5s ease infinite; } .myldrbneirgt { animation: myldrbneirgt 0.5s ease; } @keyframes myldrbneirgt { 0% { opacity: 0; transform: translateX(2000px); } 60% { opacity: 1; transform: translateX(-30px); } 80% { transform: translateX(10px); } 100% { transform: translateX(0); } } .myldrbneo-i { animation: myldrbneo 0.5s ease infinite; } .myldrbneo { animation: myldrbneo 0.5s ease; } @keyframes myldrbneo { 0% { transform: scale(1); } 25% { transform: scale(.95); } 50% { opacity: 1; transform: scale(1.1); } 100% { opacity: 0; transform: scale(.3); } } .myldrbneodwn { animation: myldrbneodwn 0.5s ease; } .myldrbneodwn-i { animation: myldrbneodwn 0.5s ease infinite; } @keyframes myldrbneodwn { 0% { transform: translateY(0); } 20% { opacity: 1; transform: translateY(-20px); } 100% { opacity: 0; transform: translateY(20px); } } .myldrrteidwnlft-i { animation: myldrrteidwnlft 0.5s ease infinite; } .myldrrteidwnlft { animation: myldrrteidwnlft 0.5s ease; } @keyframes myldrrteidwnlft { 0% { transform-origin: left bottom; transform: rotate(-90deg); opacity: 0; } 100% { transform-origin: left bottom; transform: rotate(0); opacity: 1; } } .myldrrteiuplft-i { animation: myldrrteiuplft 0.5s ease infinite; } .myldrrteiuplft { animation: myldrrteiuplft 0.5s ease; } @keyframes myldrrteiuplft { 0% { transform-origin: left bottom; transform: rotate(90deg); opacity: 0; } 100% { transform-origin: left bottom; transform: rotate(0); opacity: 1; } } .myldrhne-i { animation: myldrhne 0.5s ease infinite; } .myldrhne { animation: myldrhne 0.5s ease; } @keyframes myldrhne { 0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; } 20%, 60% { transform: rotate(80deg); transform-origin: top left; animation-timing-function: ease-in-out; } 40% { transform: rotate(60deg); transform-origin: top left; animation-timing-function: ease-in-out; } 80% { transform: rotate(60deg) translateY(0); opacity: 1; transform-origin: top left; animation-timing-function: ease-in-out; } 100% { transform: translateY(700px); opacity: 0; } } .myldrrlli-i { animation: myldrrlli 0.5s ease infinite; } .myldrrlli { animation: myldrrlli 0.5s ease; } @keyframes myldrrlli { 0% { opacity: 0; transform: translateX(-100%) rotate(-120deg); } 100% { opacity: 1; transform: translateX(0px) rotate(0deg); } } .myldrrllo-i { animation: myldrrllo 0.5s ease infinite; } .myldrrllo { animation: myldrrllo 0.5s ease; } @keyframes myldrrllo { 0% { opacity: 1; transform: translateX(0px) rotate(0deg); } 100% { opacity: 0; transform: translateX(100%) rotate(120deg); } }
+
+
+
+        body {
+            /* font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace; */
+			/* font-family: Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+    		line-height: normal;
+			font-family: "Roboto",sans-serif;
+            overflow: hidden;
+            background-color: #333333; 
+        }
+
+  
+
+
+        main {
+            width: 100%; height: 100vh; 
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-align-items: center;
+        }
+        .myloader {
+            width: 100%; height: 100vh; 
+            position: absolute;
+			top: 0; 
+			left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-align-items: center;
+        }
+        .centerbox75 {
+            position: relative;
+            width: 100%;
+            width: 75px;
+            height: 75px;
+			padding-top: 75px;
+			font-size: 12px;
+			text-align: center;
+			color: #EEE;
+            background-color: transparent;
+        }
+        .centerbox140 {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            background-color: transparent;
+        }
+        .centerbox500 {
+            position: relative;
+            width: 80%;
+            max-width: 500px;
+            height: auto;
+            background-color: transparent;
+        }
+        .centerbox700 {
+            position: relative;
+            width: 80%;
+            max-width: 700px;
+            height: auto;
+            background-color: transparent;
+        }
+        .centerbox900 {
+            position: relative;
+            width: 80%;
+            max-width: 900px;
+            height: auto;
+            background-color: transparent;
+        }
+
+        #topcenter {
+            position: absolute; 
+            top: 0;
+            margin-left: auto;
+            margin-right: auto;
+			transition: all 250ms ease;
+        }
+		.hidetopcenter { 
+            top: -125px !important;
+		}
+
+		
+		#toplogobox {
+			position: absolute; top: 20px; left: 20px; width: 75px; height: 75px;
+			transition: all 250ms ease;
+		}
+		.toplogo {
+			width: 75px; height: 75px; background: transparent url(https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/top_logo75.png); 
+		}
+		.hidetoplogobox { 
+            left: -125px !important;
+		}
+
+
+		.displaynone {display: none !important;} 
+		.displayblock {display: block !important;} 
+		.displayflex{display: flex !important;}  
+ 
+
+
+
+        #bottomleft {
+            position: absolute; 
+            bottom: 165px;
+            left: 0;
+			transition: all 250ms ease;
+			transition-delay: 250ms;
+        }
+		.hidebottomleft { 
+            bottom: -50px !important;
+		}
+        .bottomleftdefault {
+            position: relative; 
+        }
+
+
+
+        #bottomright {
+            position: absolute; 
+            bottom: 180px;
+            right: 20px;
+			transition: all 250ms ease;
+			transition-delay: 350ms;
+        }
+        .bottomrightdefault {
+            position: relative; 
+        }
+		.hidebottomright {
+            right: -160px !important;
+		}
+
+
+        .trapezoid {
+            display: inline-block;
+            width: 250px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+        }
+        .trapezoid::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-top: 55px solid #494741;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+        .trapezoid span {
+            color: white;
+            font-size: 16px;
+            position: relative;
+        }
+        
+ 
+		.bottomprotection { 
+            position: absolute;
+            top: -2px;
+            right: 5px;
+			width: 149px; 
+			height: 160px; 
+            background-repeat: no-repeat;
+            background-size: cover;
+			/* animation: changeOpacity 5s infinite; */
+		}
+		.bottomprotectiondreamer { 
+            background: transparent url(https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/floating_island_protection_dreamer.png); 
+		}
+		.bottomprotectionclan { 
+            background: transparent url(https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/floating_island_protection_clan.png); 
+		}
+		.bottomprotectionpremium { 
+            background: transparent url(https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/floating_island_protection_premium.png); 
+		}
+		.bottomprotectionscholar { 
+            background: transparent url(https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/floating_island_protection_scholar.png); 
+		}
+		.bottomfloatingisland {
+            position: absolute;
+            top: 132px;
+            right: 20px;
+            background: transparent url(https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/floating_island_north.png); 
+            width: 108px; 
+            height: 53px;
+            background-repeat: no-repeat;
+            background-size: cover;
+		}
+		.bottomcharactercontainer {
+            position: relative;
+			scale: 0.8;
+		}
+        #bottomcharacter {
+            position: absolute;
+            top: 56px;
+            right: 29px;
+            background: transparent url(https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/character_north.png); 
+            width: 89px; 
+            height: 86px;
+            background-repeat: no-repeat;
+            background-size: cover; 
+		}
+
+
+        .bottomisland {
+            position: absolute;
+            top: 52px;
+            left: 5px;
+            background: transparent url(https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/island_north.png); 
+            width: 270px; 
+            height: 109px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bottomwater {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: transparent url(https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/water.png); 
+            width: 534px; 
+            height: 165px;
+            background-repeat: no-repeat; 
+            background-size: cover;
+        }
+
+
+
+            
+        .toast-container { position: fixed; top: 20px; right: 20px; z-index: 9999; } .toast { display: none; padding: 10px 15px; width: 220px; background-color: rgb(73, 71, 65, 0.4); color: #fff; font-size: 10px; border-radius: 8px; text-align: left; margin-bottom: 5px; animation: toastslidein 0.5s ease-in-out; }
+        
+        @keyframes toastslidein { 0% { transform: translateX(100%); } 100% { transform: translateX(0); } }
+        @keyframes toastfadeout { 0% { opacity: 1; } 100% { opacity: 0; } }
+ 
+		.animationforceshow { animation-name: forceshow; animation-duration: 500ms; }
+		.shownow{opacity: 1 !important;}
+		@keyframes forceshow { 
+			0% { opacity: 0; filter: hue-rotate(0deg); } 
+			20% { opacity: 0.5; filter: hue-rotate(80deg);} 
+			25% { opacity: 0.3; filter: hue-rotate(120deg);} 
+			35% { opacity: 0; filter: hue-rotate(80deg);} 
+			40% { opacity: 0; filter: hue-rotate(0deg);}  
+			45% { opacity: 0; filter: hue-rotate(0deg);} 
+			50% { opacity: 0; filter: hue-rotate(0deg);} 
+			100% { opacity: 1; filter: hue-rotate(0deg); } 
+		}
+		.animationforcehide { animation-name: forcehide; animation-duration: 500ms; }
+		.hidenow{opacity: 0 !important;}
+		@keyframes forcehide { 
+			0% { opacity: 1; filter: hue-rotate(0deg); } 
+			20% { opacity: 0.5; filter: hue-rotate(80deg);} 
+			25% { opacity: 0.3; filter: hue-rotate(120deg);} 
+			35% { opacity: 1; filter: hue-rotate(80deg);} 
+			40% { opacity: 1; filter: hue-rotate(0deg);}  
+			45% { opacity: 1; filter: hue-rotate(0deg);} 
+			50% { opacity: 1; filter: hue-rotate(0deg);} 
+			100% { opacity: 0; filter: hue-rotate(0deg); } 
+		}
+		@keyframes changeOpacity { 0%   { opacity: 0.7; filter: hue-rotate(0deg); } 90% { opacity: 1; filter: hue-rotate(360deg);} 100% { opacity: 0.7; filter: hue-rotate(0deg); } }
+
+         
+		.animationfadeout { animation-name: animationfadeout; animation-duration: 500ms; }
+		@keyframes animationfadeout { 0% { opacity: 1; } 100% { opacity: 0; } }
+		.animationfloat { animation-name: animationfloat; animation-duration: 3s; animation-iteration-count: infinite; }
+		@keyframes animationfloat{ 50%{ transform: translateY(8px); } }
+ 
+		.confetti { display: flex; justify-content: center; align-items: center; position: absolute; width: 100%; top: 0; left: 0; height: 0; z-index: 1000; } .confettipiece { position: absolute; width: 5px; height: 12px; background: #ffd300; top: 0; opacity: 0; } .confettipiece:nth-child(1) { left: 7%; transform: rotate(-40deg); animation: showconfetti 1000ms infinite ease-out; animation-delay: 182ms; animation-duration: 1116ms; } .confettipiece:nth-child(2) { left: 14%; transform: rotate(4deg); animation: showconfetti 1000ms infinite ease-out; animation-delay: 161ms; animation-duration: 1076ms; } .confettipiece:nth-child(3) { left: 21%; transform: rotate(-51deg); animation: showconfetti 1000ms infinite ease-out; animation-delay: 481ms; animation-duration: 1103ms; width: 3px; height: 8px; animation-duration: 1000ms; animation-delay: 1000ms; } .confettipiece:nth-child(4) { left: 28%; transform: rotate(61deg); animation: showconfetti 1000ms infinite ease-out; animation-delay: 334ms; animation-duration: 2008ms; width: 4px; height: 10px; } .confettipiece:nth-child(5) { left: 35%; transform: rotate(-52deg); animation: showconfetti 1000ms infinite ease-out; animation-delay: 302ms; animation-duration: 1776ms; } .confettipiece:nth-child(8) { left: 56%; transform: rotate(49deg); animation: showconfetti 1000ms infinite ease-out; animation-delay: 1400ms; animation-duration: 1587ms; width: 4px; height: 10px; } .confettipiece:nth-child(9) { left: 63%; transform: rotate(-72deg); animation: showconfetti 5500ms infinite ease-out; animation-delay: 2182ms; animation-duration: 3016ms; } .confettipiece:nth-child(10) { left: 70%; top: -30px; transform: rotate(10deg); animation: showconfetti 1000ms infinite ease-out; animation-delay: 451ms; animation-duration: 1459ms; } .confettipiece:nth-child(7) { left: 84%; transform: rotate(42deg); animation: showconfetti 1000ms infinite ease-out; animation-delay: 464ms; animation-duration: 776ms; } .confettipiece:nth-child(6) { left: 91%; transform: rotate(-72deg); animation: showconfetti 1000ms infinite ease-out; animation-delay: 429ms; animation-duration: 1718ms; width: 3px; height: 8px; animation-duration: 3500ms; animation-delay: 1000ms; } .confettipiece:nth-child(odd) { background: #7431e8; } .confettipiece:nth-child(even) { z-index: 1; } .confettipiece:nth-child(4n-7) { background: red; }
+		@keyframes showconfetti { from { opacity: 0; rotate: 0deg; } 50% { opacity: 1; rotate: -2deg; } to { transform: translateY(350px); rotate: 0deg; } }
+		 
+		#mousemark{ opacity: 0; position: absolute; width: 1px; height: 1px; border-radius: 100%; background:rgba(87, 245, 47, 0.8); text-align: center; } #mousemark.click{ animation:mousemarkanim 0.5s; -webkit-animation:mousemarkanim 0.5s; }
+		@keyframes mousemarkanim{ 50%{ width:50px; height: 50px; margin-top: -25px; margin-left: -25px; opacity: 0.3; } 100%{ opacity: 0; } } @-webkit-keyframes mousemarkanim{ 50%{ width: 50px; height: 50px; margin-top: -25px; margin-left: -25px; opacity: 0.3; } 100%{ opacity: 0; } }
+ 
+		.ratio { position: relative; display: block; overflow: hidden; } .ratio::before { display: block; width: 100%; content: ""; } .ratio-1\:1::before { padding-bottom: 100%; } .ratio-2\:1::before { padding-bottom: 50%; } .ratio-2\:3::before { padding-bottom: 150%; } .ratio-3\:2::before { padding-bottom: 66.66667%; } .ratio-3\:4::before { padding-bottom: 133.33333%; } .ratio-4\:3::before { padding-bottom: 75%; } .ratio-16\:9::before { padding-bottom: 56.25%; }
+        
+
+        
+		@media (max-width: 767px) {
+
+            .toast-container { position: fixed; top: 60px; }
+
+            .trapezoid {
+                width: 200px;
+                height: 40px;
+                line-height: 40px;
+            }
+            .trapezoid::before {
+                border-top: 45px solid rgb(73, 71, 65);
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+            }
+            .trapezoid span { 
+                font-size: 14px; 
+            }
+
+            
+            #bottomright { 
+                bottom:70px;
+                right: 25px;
+            } 
+			.bottomfloatingisland { 
+				top: 35px;
+				right: 20px; 
+				width: 108px; 
+				height: 53px; 
+			}
+			.bottomprotection { 
+            	top: -106px;
+				right: 5px; 
+				width: 149px; 
+				height: 160px; 
+			}
+			.bottomcharactercontainer {
+				scale: 0.5;
+			}
+			#bottomcharacter { 
+				top: -42px;
+				right: 30px; 
+				width: 89px; 
+				height: 86px; 
+			}
+
+            
+            #bottomleft {
+                bottom:96px;
+            }
+            .bottomisland {
+                top: 32px;
+                left: 10px;
+                width: 133px; 
+                height: 54px;
+				background: transparent url(https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/island_north_small.png); 
+            }
+            .bottomwater {
+                top: 0;
+                left: 0;
+                width: 306px; 
+                height: 95px;
+				background: transparent url(https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/water_small.png); 
+            }
+        }
+
+
+
+
+
+
+ 
+
+.modal1 {
+  height: 250px;  
+  padding: 20px;
+    background-image: linear-gradient(to bottom,#3a5e8a,#1f3958);
+  overflow: hidden;
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.supra-scroll{
+  position: relative;
+  color: #EEE;
+  width: 100%; height: 100%;
+  margin: 0 auto;
+  padding-right: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+.supra-scroll::-webkit-scrollbar{height:0px;width:8px}.supra-scroll::-webkit-scrollbar-track{border-radius:3px}.supra-scroll::-webkit-scrollbar-thumb{border-radius:3px;--tw-bg-opacity:1;background-color:rgb(29 42 58/var(--tw-bg-opacity))}
+
+
+
+
+.grid-container { display: flex; flex-wrap: wrap; } 
+.grid-arrow {
+	position: absolute; top: 20px; right: 20px;
+}
+.grid-item {
+	position: relative;
+	flex: 0 0 calc(33.33% - 20px); 
+	margin: 10px; 
+	background-color: rgb(73, 71, 65, 0.4); 
+	color: #fff;
+	text-align: left;
+	font-size: 12px;  
+	padding: 20px;
+	border-radius: 8px;
+	height: 350px;
+}
+.grid-item:hover {
+	background-color: rgb(73, 71, 65, 0.8); 
+}
+@media (max-width: 767px) {
+	.grid-item {
+		margin: 0 0 10px 0; 
+		flex-basis: 100%;
+		height: 150px;
+	}
+}
+
+
+
+
+
+.particle { position: absolute; width: 10px; height: 10px; background-color: rgba(255, 255, 255, 0.2); border: 2px solid rgba(255, 255, 255, 0.5); border-radius: 100%; } .particleBox { position: absolute; width: 100%; height: 100%; } .particleBoxTop { top: -110%; overflow: hidden; } .particleFire { width: 20%; left: 40%; } .particleFire .particle { border-radius: 0; -webkit-transform: rotate(45deg) scale(2); -ms-transform: rotate(45deg) scale(2); transform: rotate(45deg) scale(2); background-color: #fff030; border: 3px solid #ffc030; } .particleSnow { height: 200%; top: -100%; } .particleSnow .particle { background-color: rgba(255, 255, 255, 0.9); border: none; -webkit-box-shadow: 0 0 4px white, 0 0 8px white, 0 0 12px white; box-shadow: 0 0 4px white, 0 0 8px white, 0 0 12px white; animation-direction: reverse; -webkit-animation-duration: 15s; animation-duration: 15s; } .particle1 { -webkit-animation: aParticle1 5s ease-out infinite; animation: aParticle1 5s ease-out infinite; } .particle2 { margin-left: -20%; margin-top: 2%; -webkit-animation: aParticle1 5s ease-out -1s infinite; animation: aParticle1 5s ease-out -1s infinite; } .particle3 { margin-left: -15%; margin-top: -3%; -webkit-animation: aParticle1 5s ease-out -2s infinite; animation: aParticle1 5s ease-out -2s infinite; } .particle4 { margin-left: 15%; margin-top: 3%; -webkit-animation: aParticle1 5s ease-out -3s infinite; animation: aParticle1 5s ease-out -3s infinite; } .particle5 { margin-left: -5%; -webkit-animation: aParticle1 5s ease-out -4s infinite; animation: aParticle1 5s ease-out -4s infinite; } .particle6 { margin-left: 5%; -webkit-animation: aParticle1 5s ease-out -1.5s infinite; animation: aParticle1 5s ease-out -1.5s infinite; } .particle7 { margin-left: 10%; -webkit-animation: aParticle1 5s ease-out -3.5s infinite; animation: aParticle1 5s ease-out -3.5s infinite; } .particle8 { margin-left: -10%; -webkit-animation: aParticle1 5s ease-out -8s infinite; animation: aParticle1 5s ease-out -8s infinite; } .particle9 { margin-left: -7%; -webkit-animation: aParticle1 5s ease-out -9s infinite; animation: aParticle1 5s ease-out -9s infinite; } .particle10 { margin-left: 7%; -webkit-animation: aParticle1 5s ease-out -10s infinite; animation: aParticle1 5s ease-out -10s infinite; } .particle11 { margin-left: 12%; -webkit-animation: aParticle1 5s ease-out -11s infinite; animation: aParticle1 5s ease-out -11s infinite; } .particle12 { margin-left: -12%; -webkit-animation: aParticle1 5s ease-out -12s infinite; animation: aParticle1 5s ease-out -12s infinite; } @-webkit-keyframes aParticle1 { 0% { top: 90%; left: 45%; width: 0; height: 0; opacity: 0; } 25% { left: 55%; width: 10px; height: 10px; opacity: 0.7; } 50% { left: 45%; width: 10px; height: 10px; opacity: 0.5; } 100% { top: 50%; left: 55%; width: 0; height: 0; opacity: 0; } } @keyframes aParticle1 { 0% { top: 90%; left: 45%; width: 0; height: 0; opacity: 0; } 25% { left: 55%; width: 10px; height: 10px; opacity: 0.7; } 50% { left: 45%; width: 10px; height: 10px; opacity: 0.5; } 100% { top: 50%; left: 55%; width: 0; height: 0; opacity: 0; } }
+
+
+
+
+
+.nav3body {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  background: transparent;
+  perspective: 500px;
+  padding: 15px 0;
+}
+.nav3main { 
+	width: 200px;
+	margin: 0 auto;
+  transform: rotatex(10deg);
+  -webkit-animation: nav3rotateAngle 6s linear infinite;
+          animation: nav3rotateAngle 6s linear infinite;
+}
+
+.nav3button {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  margin: 0.5em 0;
+  padding: 0.8em 2.2em;
+  cursor: pointer;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 0.4em;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal; 
+  mix-blend-mode: color-dodge;
+  perspective: 500px;
+  transform-style: preserve-3d;
+  width: 100%;
+} 
+.nav3button span {
+  mix-blend-mode: none;
+  display: block;
+} 
+.nav3button:active, .nav3button:hover {
+  background-color: #777; 
+} 
+
+@-webkit-keyframes nav3rotateAngle {
+  0% {
+    transform: rotateY(0deg) rotateX(3deg);
+    -webkit-animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+            animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+  }
+  25% {
+    transform: rotateY(6deg) rotateX(3deg);
+  }
+  50% {
+    transform: rotateY(0deg) rotateX(3deg);
+    -webkit-animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+            animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+  }
+  75% {
+    transform: rotateY(-6deg) rotateX(3deg);
+  }
+  100% {
+    transform: rotateY(0deg) rotateX(3deg);
+  }
+}
+
+@keyframes nav3rotateAngle {
+  0% {
+    transform: rotateY(0deg) rotateX(3deg);
+    -webkit-animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+            animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+  }
+  25% {
+    transform: rotateY(6deg) rotateX(3deg);
+  }
+  50% {
+    transform: rotateY(0deg) rotateX(3deg);
+    -webkit-animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+            animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+  }
+  75% {
+    transform: rotateY(-6deg) rotateX(3deg);
+  }
+  100% {
+    transform: rotateY(0deg) rotateX(3deg);
+  }
+} 
+
+		.colorhue1 {filter: hue-rotate(20deg);} .colorhue2 {filter: hue-rotate(40deg);} .colorhue3 {filter: hue-rotate(60deg);} .colorhue4 {filter: hue-rotate(80deg);} .colorhue5 {filter: hue-rotate(100deg);} .colorhue6 {filter: hue-rotate(120deg);} .colorhue7 {filter: hue-rotate(140deg);} .colorhue8 {filter: hue-rotate(160deg);} .colorhue9 {filter: hue-rotate(180deg);} .colorhue10 {filter: hue-rotate(200deg);} .colorhue11 {filter: hue-rotate(220deg);} .colorhue12 {filter: hue-rotate(240deg);} .colorhue13 {filter: hue-rotate(260deg);} .colorhue14 {filter: hue-rotate(280deg);} .colorhue15 {filter: hue-rotate(300deg);} .colorhue16 {filter: hue-rotate(320deg);} .colorhue17 {filter: hue-rotate(340deg);} .colorhue18 {filter: hue-rotate(360deg);}
+
+		.radar_pin { position: absolute; top: 50%; width: 60px; height: 60px; background-color: rgba(255,255,255,0.1); border-radius: 50%; right: 20%; transform: translateY(-50%); border: solid 1px rgba(87, 245, 47, 0.3); } @-webkit-keyframes radar_radar{ 0%{transform:translate(-50%,-50%) rotate(0deg);} 100%{transform:translate(-50%,-50%) rotate(-360deg);} } @-moz-keyframes radar_radar{ 0%{transform:translate(-50%,-50%) rotate(0deg);} 100%{transform:translate(-50%,-50%) rotate(-360deg);} } @-o-keyframes radar_radar{ 0%{transform:translate(-50%,-50%) rotate(0deg);} 100%{transform:translate(-50%,-50%) rotate(-360deg);} } @keyframes radar_radar{ 0%{transform:translate(-50%,-50%) rotate(0deg);} 100%{transform:translate(-50%,-50%) rotate(-360deg);} } @-webkit-keyframes radar_pulse{ 0%{opacity:1;width:100%;height:100%;} 100%{opacity:0;width:400%;height:400%;} } @-moz-keyframes radar_pulse{ 0%{opacity:1;width:100%;height:100%;} 100%{opacity:0;width:400%;height:400%;} } @-o-keyframes radar_pulse{ 0%{opacity:1;width:100%;height:100%;} 100%{opacity:0;width:400%;height:400%;} } @keyframes radar_pulse{ 0%{opacity:1;width:100%;height:100%;} 100%{opacity:0;width:400%;height:400%;} } .radar_ring-2 { width: 120px; height: 120px; position: absolute; top: 50%; left: 50%; border: solid 1px rgba(87, 245, 47, 0.3); overflow: hidden; border-radius: 50%; transform: translate(-50%,-50%); animation: radar_radar 3.25s linear infinite; } .radar_ring-2::before { content: ''; position: absolute; width: 7.5em; height: 7.5em; top: 50%; left: 50%; background-image: linear-gradient(230deg,rgba(132, 229, 6, 0.851),rgba(229,6,16,0) 60%); transform-origin: top left; transform: scale(1,1.7) rotate(45deg); border-top: solid 1px rgba(87, 245, 47, 0.3); overflow: hidden; background-repeat: no-repeat; } .radar_ring-2::after { content: ''; position: absolute; width: 9px; height: 9px; top: 50%; left: 50%; transform: translate(-50%,-50%); background-color: rgba(87, 245, 47, 0.8); border-radius: 50%; } .radar_pin::before, .radar_ring::before, .radar_ring::after { content: ''; position: absolute; width: 100%; height: 100%; border: solid 1px rgba(87, 245, 47, 0.3); border-radius: 50%; top: 50%; left: 50%; transform: translate3d(-50%,-50%,0); opacity: 0; } .radar_ring::before { animation: radar_pulse 5s ease infinite; } .radar_ring::after { animation: radar_pulse 5s ease 1.65s infinite; }
+
+		.blinkingstar { display: block; position: absolute; background-color: #ccc; width: 3px; height: 3px; background-color: rgba(255, 255, 255, 0.6); -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; } .blinkingstar span { animation: star-pulse 5s forwards alternate infinite ease-in-out; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-box-shadow: 0 0 25px 3px rgba(255, 255, 255, 0.2); -webkit-box-shadow: 0 0 25px 3px rgba(255, 255, 255, 0.2); box-shadow: 0 0 25px 3px rgba(255, 255, 255, 0.2); } .blinkingstar:nth-child(1) { top: 14%; left: 27%; -moz-transform: scale(1.08); -ms-transform: scale(1.08); -webkit-transform: scale(1.08); transform: scale(1.08); animation: star-pulse2 3s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(1) span { animation: star-pulse 6s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(2) { top: 48%; left: 81%; -moz-transform: scale(0.61); -ms-transform: scale(0.61); -webkit-transform: scale(0.61); transform: scale(0.61); } .blinkingstar:nth-child(2) span { animation: star-pulse 2s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(3) { top: 75%; left: 74%; -moz-transform: scale(0.77); -ms-transform: scale(0.77); -webkit-transform: scale(0.77); transform: scale(0.77); } .blinkingstar:nth-child(3) span { animation: star-pulse 3s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(4) { top: 88%; left: 54%; -moz-transform: scale(0.64); -ms-transform: scale(0.64); -webkit-transform: scale(0.64); transform: scale(0.64); animation: star-pulse2 9s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(4) span { animation: star-pulse 5s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(5) { top: 45%; left: 77%; -moz-transform: scale(0.91); -ms-transform: scale(0.91); -webkit-transform: scale(0.91); transform: scale(0.91); animation: star-pulse2 5s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(5) span { animation: star-pulse 4s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(6) { top: 92%; left: 79%; -moz-transform: scale(1.11); -ms-transform: scale(1.11); -webkit-transform: scale(1.11); transform: scale(1.11); animation: star-pulse2 23s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(6) span { animation: star-pulse 6s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(7) { top: 93%; left: 51%; -moz-transform: scale(1); -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); } .blinkingstar:nth-child(7) span { animation: star-pulse 4s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(8) { top: 88%; left: 76%; -moz-transform: scale(0.89); -ms-transform: scale(0.89); -webkit-transform: scale(0.89); transform: scale(0.89); } .blinkingstar:nth-child(8) span { animation: star-pulse 4s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(9) { top: 12%; left: 16%; -moz-transform: scale(1.22); -ms-transform: scale(1.22); -webkit-transform: scale(1.22); transform: scale(1.22); } .blinkingstar:nth-child(9) span { animation: star-pulse 1s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(10) { top: 52%; left: 45%; -moz-transform: scale(0.73); -ms-transform: scale(0.73); -webkit-transform: scale(0.73); transform: scale(0.73); animation: star-pulse2 5s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(10) span { animation: star-pulse 4s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(11) { top: 40%; left: 58%; -moz-transform: scale(1.02); -ms-transform: scale(1.02); -webkit-transform: scale(1.02); transform: scale(1.02); animation: star-pulse2 11s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(11) span { animation: star-pulse 14s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(12) { top: 43%; left: 68%; -moz-transform: scale(1.24); -ms-transform: scale(1.24); -webkit-transform: scale(1.24); transform: scale(1.24); } .blinkingstar:nth-child(12) span { animation: star-pulse 2s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(13) { top: 8%; left: 77%; -moz-transform: scale(1.01); -ms-transform: scale(1.01); -webkit-transform: scale(1.01); transform: scale(1.01); } .blinkingstar:nth-child(13) span { animation: star-pulse 4s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(14) { top: 97%; left: 41%; -moz-transform: scale(0.82); -ms-transform: scale(0.82); -webkit-transform: scale(0.82); transform: scale(0.82); animation: star-pulse2 15s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(14) span { animation: star-pulse 6s forwards alternate infinite ease-in-out; } .blinkingstar:nth-child(15) { top: 7%; left: 59%; -moz-transform: scale(0.94); -ms-transform: scale(0.94); -webkit-transform: scale(0.94); transform: scale(0.94); } .blinkingstar:nth-child(15) span { animation: star-pulse 2s forwards alternate infinite ease-in-out; }
+		@keyframes star-pulse2 { 0% { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20); opacity: 0.2; transform: scale(0.24); } 100% { transform: scale(0.94); filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; } }
+		@keyframes star-pulse { 0% { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20); opacity: 0.2; } 100% { transform: scale(0.24); filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; } }
+		
+		.starfields { position: absolute; width: 0.0625rem; height: 0.0625rem; background-color: #fff; animation: starfieldsshoot 3s cubic-bezier(0.99, 0.1, 1, 1) infinite; animation-name: starfieldsshoot, starfieldsfade; border-radius: 50%; box-shadow: 0 0 1rem -0.5rem #fff; } .starfields:nth-child(1) { transform: translate(80vw, 51vh) scale(5); animation-duration: 4.71s; animation-delay: -0.6123s; } .starfields:nth-child(2) { transform: translate(23vw, 42vh) scale(5); animation-duration: 4.35s; animation-delay: -1.9575s; } .starfields:nth-child(3) { transform: translate(59vw, 97vh) scale(5); animation-duration: 4.93s; animation-delay: -3.8454s; } .starfields:nth-child(4) { transform: translate(21vw, 42vh) scale(5); animation-duration: 4.34s; animation-delay: -2.821s; } .starfields:nth-child(5) { transform: translate(32vw, 78vh) scale(5); animation-duration: 4.88s; animation-delay: -1.22s; } .starfields:nth-child(6) { transform: translate(9vw, 59vh) scale(5); animation-duration: 4.81s; animation-delay: -1.924s; } .starfields:nth-child(7) { transform: translate(37vw, 100vh) scale(5); animation-duration: 4.99s; animation-delay: -4.6407s; } .starfields:nth-child(8) { transform: translate(3vw, 79vh) scale(5); animation-duration: 4.28s; animation-delay: -2.1828s; } .starfields:nth-child(9) { transform: translate(19vw, 31vh) scale(5); animation-duration: 4.68s; animation-delay: -0.936s; } .starfields:nth-child(10) { transform: translate(42vw, 2vh) scale(5); animation-duration: 4.16s; animation-delay: -1.1232s; } .starfields:nth-child(11) { transform: translate(42vw, 55vh) scale(5); animation-duration: 4.07s; animation-delay: -2.8897s; } .starfields:nth-child(12) { transform: translate(40vw, 41vh) scale(5); animation-duration: 4.32s; animation-delay: -0.1728s; } .starfields:nth-child(13) { transform: translate(84vw, 62vh) scale(5); animation-duration: 4.6s; animation-delay: -4.416s; } .starfields:nth-child(14) { transform: translate(46vw, 10vh) scale(5); animation-duration: 4.35s; animation-delay: -2.8275s; } .starfields:nth-child(15) { transform: translate(13vw, 4vh) scale(5); animation-duration: 4.94s; animation-delay: -4.94s; } .starfields:nth-child(16) { transform: translate(59vw, 51vh) scale(5); animation-duration: 4.68s; animation-delay: -3.0888s; } .starfields:nth-child(17) { transform: translate(26vw, 9vh) scale(5); animation-duration: 4.4s; animation-delay: -1.892s; } .starfields:nth-child(18) { transform: translate(63vw, 85vh) scale(5); animation-duration: 4.33s; animation-delay: -2.8145s; } .starfields:nth-child(19) { transform: translate(54vw, 61vh) scale(5); animation-duration: 4.48s; animation-delay: -3.9424s; } .starfields:nth-child(20) { transform: translate(5vw, 42vh) scale(5); animation-duration: 4.44s; animation-delay: -2.442s; }
+		@keyframes starfieldsshoot { 0% { transform: translate(50vw, 50vh) scale(0.5); } }
+		@keyframes starfieldsfade { from { opacity: 0; } 19% { opacity: 0; } 20% { opacity: 0.25; } 80% { opacity: 0.8; } 84% { opacity: 0.44; } 86% { opacity: 0.88; } 88% { opacity: 0.45; } 90% { opacity: 0.9; } 94% { opacity: 1; } to { opacity: 0; } }
+		.mycontainer {position: absolute; left: 0; top: 0; right: 0; bottom: 0; height: 100%; width: 100%; background-color: transparent;}
+
+		.sprite1 { width:266px; height:266px; display: block; background:transparent url(https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/explosion1.png) 0 0 no-repeat; margin:0 auto; animation: walker 1s steps(11) ; } @keyframes walker { from {background-position:0 0;} to {background-position:0 -2926px; } }
+
+    </style>
+
+    
+	<div class="myloader">
+		<div class="mycontainer">
+			<div id="mybackground1" class="mycontainer"> </div>
+			<div id="mybackground2" class="mycontainer"> </div>
+			<div id="mybackground3" class="mycontainer"> </div> 
+		</div> 
+	</div> 
+    <main> 
+        <div id="topcenter" class="hidetopcenter">
+            <div class="trapezoid">
+                <span> NORTH </span>
+            </div>
+        </div>
+        <div id="bottomleft" class="hidebottomleft">
+            <div class="bottomleftdefault"> 
+                <div class="bottomwater">
+                    
+                </div>
+                <div class="bottomisland">
+                    
+                </div> 
+            </div>
+        </div>
+        <div id="bottomright" class="hidebottomright">
+            <div class="bottomrightdefault"> 
+                <div class="bottomcharactercontainer animationfloat">
+					<div class="bottomfloatingisland"> 
+					</div>
+					<div id="bottomcharacter" class="hidenow"> 
+					</div>
+					<div class="bottomprotection bottomprotectiondreamer"> 
+					</div>
+                </div>
+            </div>
+        </div> 
+		<div id="toplogobox" class="hidetoplogobox">
+			<div class="toplogo"></div>
+		</div> 
+        <div id="center1" class="centerbox900 displaynone">
+			<div class="nav3body">
+				<div class="nav3main">
+					<button id="nav3button1" class="nav3button"><span>addLoader1</span></button>
+				</div>
+			</div>
+		</div> 
+        <div id="center2" class="centerbox900 displaynone">
+             
+			<div class="grid-container">
+				<div class="grid-item">
+					For Scholars <i class="fa fa-chevron-right grid-arrow" aria-hidden="true"></i>
+					<br /><br /><br />
+					Free to play, have fun and receive rewards.
+					<br /><br /><br />
+					<button id="addBlinkingStars">addBlinkingStars</button>
+					<button id="addStarFields">addStarFields</button>
+					<button id="addLoader1">addLoader1</button>
+					<button id="removeLoader1">removeLoader1</button>
+					<button id="addConfettiPiece">addConfettiPiece</button>
+					<button id="addExplosion1">addExplosion1</button>
+					<button id="animationforceshow">animationforceshow</button>
+					<button id="animationforcehide">animationforcehide</button> 
+
+					<button onclick="showToast()">Show Toast</button>
+					
+				</div>	
+				<div class="grid-item">
+					For Clan Members <i class="fa fa-chevron-right grid-arrow" aria-hidden="true"></i>
+					<br /><br /><br />
+					Join to play, have fun, build your group and receive rewards.
+					
+				
+				</div>
+				<div class="grid-item">
+					For Premium Members <i class="fa fa-chevron-right grid-arrow" aria-hidden="true"></i>
+					<br /><br /><br />
+					Unlock premium contents to play, have fun, build your group and receive more rewards. 
+ 
+					
+					<style>
+					.s3SpriteBoom {
+						width: 140px;
+						height: 140px; 
+						background-image: url('https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/s3_boom.png');  
+						left: -16px;
+					}
+					.s3SpriteBoomInfinite {
+						animation: anis3SpriteBoom 0.5s steps(10) infinite;
+					} 
+					.s3SpriteBoomOnce {
+						animation: anis3SpriteBoom 0.5s steps(10);
+					} 
+					
+					@keyframes anis3SpriteBoom {
+					   from { background-position:    0px; }
+						 to { background-position: -1400px; }
+					}
+					</style>
+					<!-- <div class="s3SpriteBoom s3SpriteBoomInfinite"></div>
+					
+					<br /><br />boom<br /><br /> -->
+					 
+					
+					<style>
+					.s3SpriteExplode {
+						width: 60px;
+						height: 60px; 
+						background-image: url('https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/s3_explode.png');    
+					}
+					.s3SpriteExplodeInfinite {
+						animation: anis3SpriteExplode 0.8s steps(12) infinite;
+					}
+					.s3SpriteExplodeOnce {
+						animation: anis3SpriteExplode 0.8s steps(12);
+					}
+					@keyframes anis3SpriteExplode {
+					   from { background-position:    0px; }
+						 to { background-position: -720px; }
+					}
+					</style>
+					<!-- <div class="s3SpriteExplode s3SpriteExplodeInfinite"></div>
+					
+					<br /><br />explode<br /><br /> -->
+					 
+					<style>
+					.s3SpriteElectric {
+						width: 23px;
+						height: 22px; 
+						padding-top: 2px;
+						background-image: url('https://bafybeifpmlosisscjdw6m5dyehk37hatckznob5bv2leeme5lhk76zcxxy.ipfs.nftstorage.link/s3_electric.png'); 
+					}
+					.s3SpriteElectricInfinite {
+						animation: anis3SpriteElectric 0.8s steps(6) infinite;
+					}
+					
+					@keyframes anis3SpriteElectric {
+					   from { background-position:    0px; }
+						 to { background-position: -138px; }
+					}
+					</style>
+					<!-- <div class="s3SpriteElectric s3SpriteElectricInfinite"></div>
+					<br /><br />electric<br /><br />					 -->
+<!-- 					
+					<div class="bottomprotection colorhue6"> 
+					</div> -->
+
+				</div>
+			</div>
+
+
+
+
+			<!-- <div class="modal1">
+				<div class="supra-scroll">
+					<h2>Thank you for the help with our beta test. This is just the beginning.</h2> <br />
+
+					We just ended our public beta, and it was an overwhelming success. Coming up next is our official launch, and you don't want to miss this. Keep an eye on your email, we’ll let you know as soon as we open the floodgates again.
+					<br />
+					<br /> 
+					We're putting some features on pause and taking them back to the lab. They’re being reworked to make sure that we’re ready to Blast Off with each and every one of you. That’s right, we're creating an even bigger rewards model so everyone who joins the Supra community wins. The Stars and $SUPRA token rewards will be on pause as well in this period.
+					<br />
+					<br /> 
+					Don’t worry if your referral count isn’t reflecting on the dashboard right now, we have complete records of them. We’ve been listening to the community’s feedback and gained a lot of insights from the beta launch, and there will be changes to the existing rewards you have been seeing in this testing phase. Once everything is finalized, we will reach out to you via email about the changes to your rewards before the official launch.
+					In the meantime, we’re keeping the sign-up and referral features active. We know a lot of referral links have been shared already and welcome anyone who wants to join us. You can also continue to refer during this time, these referrals will be counted once we launch for good. You’ll be hearing from us very soon.
+				</div>
+			</div> -->
+  
+   
+
+
+
+			<!-- <figure class="ratio ratio-2:1">
+				<figcaption>ratio 2:1</figcaption>
+			</figure> 
+			<figure class="ratio ratio-16:9">
+				<figcaption>ratio 16:9</figcaption>
+			</figure> 
+			<figure class="ratio ratio-3:2">
+				<figcaption>ratio 3:2</figcaption>
+			</figure> 
+			<figure class="ratio ratio-4:3">
+				<figcaption>ratio 4:3</figcaption>
+			</figure> 
+			<figure class="ratio ratio-1:1">
+				<figcaption>ratio 1:1</figcaption>
+			</figure> 
+			<figure class="ratio ratio-3:4">
+				<figcaption>ratio 3:4</figcaption>
+			</figure> 
+			<figure class="ratio ratio-2:3">
+				<figcaption>ratio 2:3</figcaption>
+			</figure>  -->
+<!-- 
+			<div class="radar_pin">
+				<span class="radar_ring-2"></span>
+				<span class="radar_ring"></span>
+			</div> -->
+ 
+        </div> 
+        <div id="mousemark"></div>
+        <div class="toast-container"></div>
+    </main>
+	<div id="myforeground1" class="myloader displaynone"> </div> 
+	<div id="myforeground2" class="myloader displaynone"> </div> 
+	<div id="myforeground3" class="myloader displaynone"> </div> 
+    <script>
+		'use strict';
+		const vCPRE = 'AAA';
+        function showToast() {
+            var toastContainer = document.querySelector('.toast-container');
+            var toast = createToast('This is a toast message'); 
+            var firstToast = toastContainer.firstChild;
+            if (firstToast) {
+            	toastContainer.insertBefore(toast, firstToast);
+            } else {
+            	toastContainer.appendChild(toast);
+            } 
+            setTimeout(function() {
+				toast.style.display = 'block';
+				setTimeout(function() {
+					toast.style.animation = 'toastfadeout 0.5s';
+					toast.addEventListener('animationend', function() {
+						toastContainer.removeChild(toast);
+					});
+				}, 8000);
+            }, 100);
+        } 
+        function createToast(message) {
+            var toast = document.createElement('div');
+            toast.classList.add('toast');
+            toast.textContent = message;
+            return toast;
+        } 
+        document.addEventListener("DOMContentLoaded", function() {
+			document.addEventListener("click", function(e){
+				let info = document.querySelector('#mousemark'); 
+					let x = e.x - 0;
+					let y = e.y - 0;  
+					info.style.left = x + "px";
+					info.style.top = y + "px";
+					console.log(x,y);
+					info.classList.add('click');
+						setTimeout(function(){
+							info.classList.remove('click');
+						}, 650);
+					
+				}
+			);
+		});
+
+ 
+		window.addEventListener("beforeunload", (event) => {
+			event.preventDefault();
+			event.returnValue = "There are unsaved changes. Leave now?";
+		}); 
+		function iniFrame() { 
+			if(window.self !== window.top) { 
+				document.write("Denied: Something Went Wrong");
+			} else {
+				if ( window.location !== window.parent.location ) { 
+					document.write("Denied: Something Went Wrong");
+				} else { 
+					document.write("Granted: Done");
+				}
+			}
+		} 
+		iniFrame(); 
+
+		
+
+
+
+		function addBlinkingStars() {
+			document.getElementById('bottomleft').classList.remove('hidebottomleft');
+			document.getElementById('bottomright').classList.remove('hidebottomright');
+			document.getElementById('toplogobox').classList.remove('hidetoplogobox');					
+			var vmai = document.getElementById('mybackground1'); 
+			if (!vmai) {
+				console.log('Denied: Not Found.');
+				return;
+			} 
+			vmai.innerHTML = "";
+			for (var i = 0; i < 15; i++) {
+				var vcon = document.createElement('div');
+				vcon.className = 'blinkingstar';
+				var vspa = document.createElement('span');
+				vcon.appendChild(vspa);
+				vmai.appendChild(vcon);
+			}
+		}
+		function addStarFields() {
+			document.getElementById('bottomleft').classList.add('hidebottomleft'); 
+			document.getElementById('bottomright').classList.add('hidebottomright');
+			document.getElementById('toplogobox').classList.add('hidetoplogobox');
+			var vmai = document.getElementById('mybackground1'); 
+			if (!vmai) {
+				console.log('Denied: Not Found.');
+				return;
+			} 
+			vmai.innerHTML = "";
+			for (var i = 0; i < 20; i++) {
+				var vcon = document.createElement('div');
+				vcon.className = 'starfields'; 
+				vmai.appendChild(vcon);
+			}
+		}
+		function addConfettiPiece() {
+			var vmai = document.getElementById('mybackground2'); 
+			if (!vmai) {
+				console.log('Denied: Not Found.');
+				return;
+			} 
+			for (var i = 0; i < 10; i++) {
+				var vcon = document.createElement('div');
+				vcon.className = 'confettipiece'; 
+				vmai.appendChild(vcon);
+			}
+			setTimeout(function(){
+				document.getElementById('mybackground2').classList.add('animationfadeout');
+			}, 7000);
+			setTimeout(function(){
+				document.getElementById('mybackground2').classList.remove('animationfadeout');
+				vmai.innerHTML = "";
+			}, 8000);
+		}
+		function addLoader1(x_,wrl_,ssf) { 
+			var vx = "center1";
+			var vbox1 = document.getElementById("center1");
+			var vbox2 = document.getElementById("center2");
+			vbox1.classList.add('displaynone'); 
+			vbox2.classList.add('displaynone'); 
+			if (x_ == 1) {
+				vx = "center1";
+			} else if (x_ == 2) {
+				vx = "center2";
+			} else  {
+				vx = "center1";
+			}
+			if (ssf == 1) { addStarFields(); }
+			 
+			var vbox = document.getElementById(vx);  
+			// vbox.innerHTML = ""; 
+			var vmai = document.getElementById('myforeground2');  
+			vmai.classList.remove('displaynone'); 
+			vmai.classList.add('displayflex'); 
+			if (!vmai) {
+				console.log('Denied: Not Found.');
+				return;
+			} 
+			// for (var i = 0; i < 1; i++) {1
+			var vcon = document.createElement('div');
+			vcon.setAttribute("id", "myownloader1");
+			vcon.className = 'centerbox75 toplogo myldrbnei'; 
+			vcon.innerHTML = "Loading...";
+			vmai.appendChild(vcon);
+			// } 
+			setTimeout(function(){  
+				vcon.classList.remove('myldrbnei');  
+			}, 500);  
+			if (wrl_ == 1) {
+				setTimeout(function(){  
+					removeLoader1(x_);  
+				}, 2000);  
+			}
+		}
+		function removeLoader1(x_) {
+			var vx = "center1";
+			if (x_ == 1) {
+				vx = "center1";
+			} else if (x_ == 2) {
+				vx = "center2";
+			} else  {
+				vx = "center1";
+			}
+			var vbox = document.getElementById(vx);  
+			var vmai = document.getElementById('myforeground2'); 
+			var vcon = document.getElementById('myownloader1'); 
+			// vcon.classList.remove('animationfloat'); 
+			vcon.classList.add('myldrbneo');  
+			setTimeout(function(){  
+				vmai.innerHTML = "";
+			}, 450);
+			setTimeout(function(){  
+				vmai.classList.remove('displayflex'); 
+				vmai.classList.add('displaynone');
+				vbox.classList.remove('displaynone');
+				addExplosion1(x_); 
+			}, 500);
+			
+		}
+		function addExplosion1(x_) {
+			var vx = "center1";
+			var vbox2; 
+			if (x_ == 1) {
+				vx = "center1";
+				vbox2 = document.getElementById("center2");
+			} else if (x_ == 2) {
+				vx = "center2"; 
+				vbox2 = document.getElementById("center1");
+			} else  {
+				vx = "center1";
+				vbox2 = document.getElementById("center2");
+			}
+			var vbox = document.getElementById(vx); 
+			var vmai = document.getElementById('myforeground3'); 
+			vbox2.classList.add('displaynone'); 
+			vbox.classList.add('displaynone'); 
+			vmai.classList.remove('displaynone'); 
+			vmai.classList.add('displayflex'); 
+			if (!vmai) {
+				console.log('Denied: Not Found.');
+				return;
+			} 
+			// for (var i = 0; i < 1; i++) {
+			var vcon = document.createElement('div');
+			vcon.className = 'centerbox140 s3SpriteBoom s3SpriteBoomOnce'; 
+			vmai.appendChild(vcon);
+			// }
+			setTimeout(function(){ 
+				vmai.innerHTML = "";
+				vmai.classList.add('displaynone'); 
+				vmai.classList.remove('displayflex'); 
+			}, 1000);
+			setTimeout(function(){ 
+				vbox.classList.remove('displaynone'); 
+			}, 250);
+		}
+
+
+		addStarFields();	
+		function frun() { /* frun */
+			window.scrollTo(0, 0); 
+            window.addEventListener('click', function(e) { /* click */
+				if (document.querySelector('#addBlinkingStars') && document.querySelector('#addBlinkingStars').contains(e.target)) { 
+					addBlinkingStars();
+				}
+				if (document.querySelector('#addStarFields') && document.querySelector('#addStarFields').contains(e.target)) {  
+					addStarFields();
+				}
+				if (document.querySelector('#nav3button1') && document.querySelector('#nav3button1').contains(e.target)) {
+					addLoader1(2,1,1);
+				}
+				if (document.querySelector('#addLoader1') && document.querySelector('#addLoader1').contains(e.target)) {
+					addLoader1(1,1,1);
+				}
+				if (document.querySelector('#removeLoader1') && document.querySelector('#removeLoader1').contains(e.target)) {
+					removeLoader1();
+				}
+				if (document.querySelector('#addConfettiPiece') && document.querySelector('#addConfettiPiece').contains(e.target)) {
+					addConfettiPiece();
+				}
+				if (document.querySelector('#addExplosion1') && document.querySelector('#addExplosion1').contains(e.target)) {
+					addExplosion1(); 
+				}
+				if (document.querySelector('#animationforceshow') && document.querySelector('#animationforceshow').contains(e.target)) {
+						document.getElementById('bottomcharacter').classList.remove('hidenow');
+					document.getElementById('bottomcharacter').classList.add('animationforceshow');
+					document.getElementById('bottomcharacter').classList.add('myldrgrw');
+					setTimeout(() => {
+						document.getElementById('bottomcharacter').classList.remove('myldrgrw'); 
+						document.getElementById('bottomcharacter').classList.remove('animationforceshow'); 
+					}, 500);
+				}
+				if (document.querySelector('#animationforcehide') && document.querySelector('#animationforcehide').contains(e.target)) {
+					document.getElementById('bottomcharacter').classList.add('animationforcehide');
+					document.getElementById('bottomcharacter').classList.add('myldrfdeo');
+					setTimeout(() => {
+						document.getElementById('bottomcharacter').classList.remove('myldrfdeo');
+						document.getElementById('bottomcharacter').classList.remove('animationforcehide');
+						document.getElementById('bottomcharacter').classList.add('hidenow');
+					}, 500);
+				}
+            }); /* click */  
+			setTimeout(() => {
+				addLoader1(1,0,0);
+			}, 1000);  
+			setTimeout(() => {
+				removeLoader1(1);
+			}, 3000);  
+			setTimeout(() => {
+				document.getElementById('topcenter').classList.remove('hidetopcenter');
+			}, 2500);  
+			setTimeout(() => {
+				document.getElementById('toplogobox').classList.remove('hidetoplogobox');
+			}, 4000); 
+			// setTimeout(() => {
+			// 	addBlinkingStars();
+			// 	console.log("addBlinkingStars");
+			// }, 2000);
+		} /* frun */
+		window.onload = function() { 
+			frun();
+			console.log("frun");
+		}
+    </script>
+
+</body>
+</html>
