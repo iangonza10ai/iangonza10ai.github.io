@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<!-- <meta http-equiv="X-Frame-Options" content="deny" /> -->
     <title>App</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -38,13 +38,16 @@
 		.myldrfdedwn-i { animation: myldrfdedwn 0.5s ease infinite; } .myldrfdedwn { animation: myldrfdedwn 0.5s ease; } @keyframes myldrfdedwn { 0% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; transform: translateY(20px); } } .myldrfdergt-i { animation: myldrfdergt 0.5s ease infinite; } .myldrfdergt { animation: myldrfdergt 0.5s ease; } @keyframes myldrfdergt { 0% { opacity: 1; transform: translateX(0); } 100% { opacity: 0; transform: translateX(20px); } } .myldrbnei-i { animation: myldrbnei 0.5s ease infinite; } .myldrbnei { animation: myldrbnei 0.5s ease; } @keyframes myldrbnei { 0% { opacity: 0; transform: scale(.3); } 50% { opacity: 1; transform: scale(1.05); } 70% { transform: scale(.9); } 100% { transform: scale(1); } } .myldrbneirgt-i { animation: myldrbneirgt 0.5s ease infinite; } .myldrbneirgt { animation: myldrbneirgt 0.5s ease; } @keyframes myldrbneirgt { 0% { opacity: 0; transform: translateX(2000px); } 60% { opacity: 1; transform: translateX(-30px); } 80% { transform: translateX(10px); } 100% { transform: translateX(0); } } .myldrbneo-i { animation: myldrbneo 0.5s ease infinite; } .myldrbneo { animation: myldrbneo 0.5s ease; } @keyframes myldrbneo { 0% { transform: scale(1); } 25% { transform: scale(.95); } 50% { opacity: 1; transform: scale(1.1); } 100% { opacity: 0; transform: scale(.3); } } .myldrbneodwn { animation: myldrbneodwn 0.5s ease; } .myldrbneodwn-i { animation: myldrbneodwn 0.5s ease infinite; } @keyframes myldrbneodwn { 0% { transform: translateY(0); } 20% { opacity: 1; transform: translateY(-20px); } 100% { opacity: 0; transform: translateY(20px); } } .myldrrteidwnlft-i { animation: myldrrteidwnlft 0.5s ease infinite; } .myldrrteidwnlft { animation: myldrrteidwnlft 0.5s ease; } @keyframes myldrrteidwnlft { 0% { transform-origin: left bottom; transform: rotate(-90deg); opacity: 0; } 100% { transform-origin: left bottom; transform: rotate(0); opacity: 1; } } .myldrrteiuplft-i { animation: myldrrteiuplft 0.5s ease infinite; } .myldrrteiuplft { animation: myldrrteiuplft 0.5s ease; } @keyframes myldrrteiuplft { 0% { transform-origin: left bottom; transform: rotate(90deg); opacity: 0; } 100% { transform-origin: left bottom; transform: rotate(0); opacity: 1; } } .myldrhne-i { animation: myldrhne 0.5s ease infinite; } .myldrhne { animation: myldrhne 0.5s ease; } @keyframes myldrhne { 0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; } 20%, 60% { transform: rotate(80deg); transform-origin: top left; animation-timing-function: ease-in-out; } 40% { transform: rotate(60deg); transform-origin: top left; animation-timing-function: ease-in-out; } 80% { transform: rotate(60deg) translateY(0); opacity: 1; transform-origin: top left; animation-timing-function: ease-in-out; } 100% { transform: translateY(700px); opacity: 0; } } .myldrrlli-i { animation: myldrrlli 0.5s ease infinite; } .myldrrlli { animation: myldrrlli 0.5s ease; } @keyframes myldrrlli { 0% { opacity: 0; transform: translateX(-100%) rotate(-120deg); } 100% { opacity: 1; transform: translateX(0px) rotate(0deg); } } .myldrrllo-i { animation: myldrrllo 0.5s ease infinite; } .myldrrllo { animation: myldrrllo 0.5s ease; } @keyframes myldrrllo { 0% { opacity: 1; transform: translateX(0px) rotate(0deg); } 100% { opacity: 0; transform: translateX(100%) rotate(120deg); } }
 
 
-
-        body {
+		html, body {
             /* font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace; */
 			/* font-family: Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+			position: relative;
     		line-height: normal;
 			font-family: "Roboto",sans-serif;
-            overflow: hidden;
+            overflow: hidden !important;
+    		overflow-x: hidden !important;
+            overflow-y: hidden !important;
+			height:100% !important;
             background-color: #333333; 
         }
 
